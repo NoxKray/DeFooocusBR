@@ -49,6 +49,3 @@ with tarfile.open('zrok.tar.gz', 'r:gz') as tar:
     tar.extractall('/kaggle/working/zrok')
 
 os.remove('zrok.tar.gz')
-
-with open('/dev/null', 'w') as devnull:
-    subprocess.run(["git", "clone", "https://github.com/NoxKray/DeFooocusBR.git"], stderr=devnull, stdout=devnull)
